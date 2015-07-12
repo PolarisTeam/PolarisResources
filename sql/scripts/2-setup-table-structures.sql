@@ -39,3 +39,20 @@ CREATE TABLE IF NOT EXISTS `serverinfoes` (
   `setting` longtext,
   PRIMARY KEY (`info`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+/*
+-- Table structure for table `Teleports`
+*/
+CREATE TABLE IF NOT EXISTS `teleports` (
+  `ZoneName` varchar(225) NOT NULL,
+  `ObjectID` int(11) NOT NULL,
+  `RotX` float NOT NULL,
+  `RotY` float NOT NULL,
+  `RotZ` float NOT NULL,
+  `RotW` float NOT NULL,
+  `PosX` float NOT NULL,
+  `PosY` float NOT NULL,
+  `PosZ` float NOT NULL,
+  PRIMARY KEY (`ZoneName`,`ObjectID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
