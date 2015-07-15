@@ -72,5 +72,5 @@ CREATE TABLE IF NOT EXISTS `npcs` (
   `PosX` float NOT NULL,
   `PosY` float NOT NULL,
   `PosZ` float NOT NULL,
-  PRIMARY KEY (`ZoneName`,`ObjectID`)
+  PRIMARY KEY (`EntityID`,`ZoneName`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
