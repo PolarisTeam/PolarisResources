@@ -56,3 +56,21 @@ CREATE TABLE IF NOT EXISTS `teleports` (
   `PosZ` float NOT NULL,
   PRIMARY KEY (`ZoneName`,`ObjectID`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+/*
+-- Table structure for table `Teleports`
+*/
+CREATE TABLE IF NOT EXISTS `npcs` (
+  `EntityID` int(11) NOT NULL,
+  `ZoneName` varchar(225) NOT NULL,
+  `NPCName`  varchar(255) NOT NULL,
+  `RotX` float NOT NULL,
+  `RotY` float NOT NULL,
+  `RotZ` float NOT NULL,
+  `RotW` float NOT NULL,
+  `PosX` float NOT NULL,
+  `PosY` float NOT NULL,
+  `PosZ` float NOT NULL,
+  PRIMARY KEY (`ZoneName`,`ObjectID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
