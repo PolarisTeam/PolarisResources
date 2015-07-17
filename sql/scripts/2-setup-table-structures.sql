@@ -2,7 +2,7 @@
 -- Table structure for table `players`
 */
 
-CREATE TABLE IF NOT EXISTS `players` (
+CREATE TABLE IF NOT EXISTS `Players` (
   `PlayerID` int(11) NOT NULL AUTO_INCREMENT,
   `Username` longtext,
   `Password` longtext,
@@ -18,7 +18,7 @@ CREATE TABLE IF NOT EXISTS `players` (
 
 /* TODO: Check the auto increment for characters. */
 
-CREATE TABLE IF NOT EXISTS `characters` (
+CREATE TABLE IF NOT EXISTS `Characters` (
   `CharacterID` int(11) NOT NULL AUTO_INCREMENT,
   `Name` longtext,
   `LooksBinary` longblob,
@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `characters` (
 
 
 /*
--- Table structure for table `serverInfoes`
+-- Table structure for table `ServerInfoes`
 */
 
 CREATE TABLE IF NOT EXISTS `serverInfoes` (
@@ -44,7 +44,7 @@ CREATE TABLE IF NOT EXISTS `serverInfoes` (
 /*
 -- Table structure for table `Teleports`
 */
-CREATE TABLE IF NOT EXISTS `teleports` (
+CREATE TABLE IF NOT EXISTS `Teleports` (
   `ZoneName` varchar(225) NOT NULL,
   `ObjectID` int(11) NOT NULL,
   `RotX` float NOT NULL,
@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `teleports` (
 /*
 -- Table structure for table `Teleports`
 */
-CREATE TABLE IF NOT EXISTS `npcs` (
+CREATE TABLE IF NOT EXISTS `NPCs` (
   `EntityID` int(11) NOT NULL,
   `ZoneName` varchar(225) NOT NULL,
   `NPCName`  varchar(255) NOT NULL,
