@@ -34,7 +34,7 @@ CREATE TABLE IF NOT EXISTS `Characters` (
 -- Table structure for table `ServerInfoes`
 */
 
-CREATE TABLE IF NOT EXISTS `serverInfoes` (
+CREATE TABLE IF NOT EXISTS `ServerInfoes` (
   `info` varchar(255) CHARACTER SET utf8 NOT NULL,
   `setting` longtext,
   PRIMARY KEY (`info`)
