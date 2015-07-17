@@ -26,7 +26,7 @@ CREATE TABLE IF NOT EXISTS `Characters` (
   `Player_PlayerID` int(11) DEFAULT NULL,
   PRIMARY KEY (`CharacterID`),
   KEY `IX_Player_PlayerID` (`Player_PlayerID`) USING HASH,
-  FOREIGN KEY (`Player_PlayerID`) REFERENCES `players` (`PlayerID`)
+  FOREIGN KEY (`Player_PlayerID`) REFERENCES `Players` (`PlayerID`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 
