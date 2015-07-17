@@ -2,8 +2,6 @@
 -- Default NPCs (For lobby)
 --
 
-TRUNCATE TABLE `npcs`;
-
 INSERT IGNORE INTO `NPCs` (`EntityID`, `ZoneName`, `NPCName`, `RotX`, `RotY`, `RotZ`, `RotW`, `PosX`, `PosY`, `PosZ`) VALUES
 (450, 'lobby', 'Npc_ShopWeapon', 0, -0.587402, 0, 0.808594, 25.6875, 0.0599976, -142.375),
 (451, 'lobby', 'Npc_ShopItem', 0, 0.615234, 0, 0.787598, -26, 0.0599976, -141.25),
