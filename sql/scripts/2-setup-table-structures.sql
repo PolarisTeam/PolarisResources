@@ -31,10 +31,10 @@ CREATE TABLE IF NOT EXISTS `characters` (
 
 
 /*
--- Table structure for table `serverinfoes`
+-- Table structure for table `serverInfoes`
 */
 
-CREATE TABLE IF NOT EXISTS `serverinfoes` (
+CREATE TABLE IF NOT EXISTS `serverInfoes` (
   `info` varchar(255) CHARACTER SET utf8 NOT NULL,
   `setting` longtext,
   PRIMARY KEY (`info`)
