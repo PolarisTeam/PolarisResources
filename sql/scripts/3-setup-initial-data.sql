@@ -4,7 +4,7 @@
 
 TRUNCATE TABLE `npcs`;
 
-INSERT INTO `npcs` (`EntityID`, `ZoneName`, `NPCName`, `RotX`, `RotY`, `RotZ`, `RotW`, `PosX`, `PosY`, `PosZ`) VALUES
+INSERT IGNORE INTO `npcs` (`EntityID`, `ZoneName`, `NPCName`, `RotX`, `RotY`, `RotZ`, `RotW`, `PosX`, `PosY`, `PosZ`) VALUES
 (450, 'lobby', 'Npc_ShopWeapon', 0, -0.587402, 0, 0.808594, 25.6875, 0.0599976, -142.375),
 (451, 'lobby', 'Npc_ShopItem', 0, 0.615234, 0, 0.787598, -26, 0.0599976, -141.25),
 (452, 'lobby', 'Npc_CounterLab1', 0, -0.719238, 0, 0.694336, 26.625, 0.0599976, -133),
@@ -116,7 +116,7 @@ INSERT INTO `npcs` (`EntityID`, `ZoneName`, `NPCName`, `RotX`, `RotY`, `RotZ`, `
 -- Default Teleports (For lobby)
 --
 
-INSERT INTO `teleports` (`ZoneName`, `ObjectID`, `RotX`, `RotY`, `RotZ`, `RotW`, `PosX`, `PosY`, `PosZ`) VALUES
+INSERT IGNORE INTO `teleports` (`ZoneName`, `ObjectID`, `RotX`, `RotY`, `RotZ`, `RotW`, `PosX`, `PosY`, `PosZ`) VALUES
 ('lobby', 433, 0, -0.964844, 0, 0.262207, 28.5625, 0, 148.375),
 ('lobby', 435, 0, 0.964844, 0, 0.262451, -28.3281, 0, 148.25),
 ('lobby', 437, 0, 0.999512, 0, -0.000893593, 0.112061, 0, 138.625),
