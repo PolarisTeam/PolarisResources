@@ -74,3 +74,21 @@ CREATE TABLE IF NOT EXISTS `NPCs` (
   `PosZ` float NOT NULL,
   PRIMARY KEY (`EntityID`,`ZoneName`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+   
+/*
+-- Table structure for table `GameObjects`
+*/
+CREATE TABLE IF NOT EXISTS `GameObjects` (
+  `ObjectID` int(11) NOT NULL,
+  `ZoneName` varchar(225) NOT NULL,
+  `ObjectName` varchar(225) NOT NULL,
+  `ObjectFlags` BLOB NOT NULL,
+  `RotX` float NOT NULL,
+  `RotY` float NOT NULL,
+  `RotZ` float NOT NULL,
+  `RotW` float NOT NULL,
+  `PosX` float NOT NULL,
+  `PosY` float NOT NULL,
+  `PosZ` float NOT NULL,
+  PRIMARY KEY (`ObjectID`, `ZoneName`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
